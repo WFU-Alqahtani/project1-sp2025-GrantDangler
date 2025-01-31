@@ -89,11 +89,11 @@ public class Main {
     }
 
     public static void emptyCartReverseOrder(ArrayList<Item> shop){
-        System.out.println("Emptying Cart in reverse order:");
+        System.out.println("Removing all items from the cart in \"Last in First out\" order...");
         while (!shop.isEmpty()) {
             Item remove = shop.remove(shop.size() - 1);
             System.out.println("Removing: " + remove.getItemName());
         }
         System.out.println("Cart has been emptied.");
-}
+    }
 }
